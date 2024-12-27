@@ -129,6 +129,7 @@ int main()
 	   printf("\t1 Registrar nomes\n"); // "\t" dar um espaçamento nas bordas
 	   printf("\t2 Consultar nomes\n");
 	   printf("\t3 Deletar nomes\n\n");
+	   printf("\t4 Sair do sistema\n\n");
 	   printf("Escolha a opção desejada: "); //Fim do menu
 	
 	   scanf("%d", &opcao); //"%d" armazenando a escolha do usuário
@@ -150,6 +151,11 @@ int main()
 		   deletar();
 		   break;
 		   
+		   case 4:
+		   printf("Obrigado por utilizar o sistema!\n");
+		   return 0;
+		   break;
+		   	
 		   default:
 		   printf("Ação indisponivel, tente novamente...\n");
 		   system("pause"); //Pausa a tela
